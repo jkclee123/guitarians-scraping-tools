@@ -1,7 +1,7 @@
 [project]
-name = "guitarians-artist"
+name = "guitarians-scraping-tools"
 version = "0.1.0"
-description = "Add your description here"
+description = "Scrap song names and chord pdfs from Guitarians"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

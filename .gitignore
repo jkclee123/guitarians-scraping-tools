@@ -138,3 +138,5 @@ Thumbs.db
 pdfs/
 artist_song_list/
 guitarians_url/
+
+*.txt

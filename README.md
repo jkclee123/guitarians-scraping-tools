@@ -75,3 +75,34 @@ uv run merge_pdfs.py -o combined.pdf -dir ./chord/
 # Merge specific PDF files directly
 uv run merge_pdfs.py -o final.pdf file1.pdf file2.pdf file3.pdf
 ```
+
+### 5. scrape_user_chords.py
+Scrape all chord links from a Guitarians user profile page.
+
+```bash
+uv run scrape_user_chords.py <user_id>
+```
+
+**Parameters:**
+- `<user_id>`: User ID to scrape chord links from (required, e.g., 320385)
+
+**Example:**
+```bash
+uv run scrape_user_chords.py 320385
+```
+
+### 6. process_user_chords.py
+Orchestrate the complete workflow to scrape, process, and merge user chord PDFs. This script automates the entire process from scraping chord links to generating a merged PDF.
+
+```bash
+uv run process_user_chords.py <user_id> [-clicks <number>]
+```
+
+**Parameters:**
+- `<user_id>`: User ID to process (required, e.g., 320385)
+- `-clicks, --clicks`: Number of times to click the font larger button when generating PDFs (default: 0)
+
+**Example:**
+```bash
+uv run process_user_chords.py 320385 -clicks 3
+```

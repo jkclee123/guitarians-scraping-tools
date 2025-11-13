@@ -9,7 +9,6 @@ import argparse
 from pathlib import Path
 from urllib.parse import unquote
 import re
-import os
 from playwright.sync_api import sync_playwright
 
 def parse_chord_url(url):
